@@ -63,10 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCartUI();
     }
 
-    document.querySelectorAll(".addToCartBtn").forEach(button => {
-        button.addEventListener("click", function () {
-            addToCart({ name: this.dataset.name, price: parseFloat(this.dataset.price) });
-        });
+    document.getElementById("addToCartBtn").addEventListener("click", function () {
+        addToCart({ name: "FUNUISIC", price: 49.99 });
     });
 
     if (clearCartButton) {
